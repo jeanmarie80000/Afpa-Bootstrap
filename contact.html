@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shink-to-fit=no">
+
+    <title>Index.html</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="d-flex align-items-center row mb-1">
+                <div class="col-12 col-lg-3 p-2">
+                    <img src="src/img/jarditou_logo.jpg" class="img-fluid height: auto;" alt="logo_jarditou" title="logo_jarditou">
+                </div>
+                <div class="col-lg-9 p-2">
+                    <p class="text-center fs-3">La qualité depuis 70 ans</p>
+                </div>
+            </div>
+        </header>
+ 
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableau.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Formulaire</a>
+                        </li>   
+                    </ul>
+                    <form class="d-sm-none d-lg-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Votre promotion" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <span>
+            <img src="src/img/promotion.jpg" class="img-fluid col-12" alt="banniere_promo" title="banniere_promo">
+        </span>
+
+        
+    
+
+        <section>
+            <br>
+
+            <p>* Ces zones sont obligatoires</p>
+
+            <form action="http://bienvu.net/script.php" method="post" id="formulaire_complet" class="mb-3">
+
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                        <label for="inputName1" class="form-label">Mon nom* : </label>
+                        <input type="text" name="nom" id="inputName1" class="form-control" aria-describedby="nameHelp" maxlength="25">
+                        <div id="div_erreur_nom" class="erreur_form form-text"></div>
+                        
+    
+                        <label for="inputSurname1" class="form-label">Mon prénom* : </label>
+                        <input type="text" name="prenom" id="inputSurname1" class="form-control" aria-describedby="surnameHelp" maxlength="25">
+                        <div id="div_erreur_prenom" class="erreur_form form-text"></div>
+    
+                        <div class="radio">
+                            <label for="inputRadio" class="form-label">Sexe* : </label>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Féminin
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Masculin
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Autres
+                                </label>
+                            </div>
+                        </div>             
+                        <div id="div_erreur_radio_sexe" class="erreur_form"></div>
+
+                        <label class="inputBirthday" for="age">Date de naissance* : </label>
+                        <input type="date" name="ddn" id="age" class="form-control" aria-describedby="Birthday"><br>
+                        <div id="div_erreur_date" class="erreur_form"></div>
+    
+                        <label for="code_postal" class="inputPostcode">Code postal* : </label>
+                        <input type="text" name="code_postal" id="code_postal" class="form-control" aria-describedby="postcode" maxlength="5"><br>
+                        <div id="div_erreur_code_postal" class="erreur_form"></div>
+                        
+                        <label for="adresse" class="inputAdress">Adresse : </label>
+                        <input type="text" name="adresse" id="adresse" class="form-control" aria-describedby="adress" maxlength="100"><br>
+
+                        <label for="ville" class="inputCity">Ville : </label>
+                        <input type="text" name="ville" id="ville" class="form-control" aria-describedby="city" maxlength="100"><br>
+
+                        
+                        <label for="inputEmail" class="form-label">E-mail* :</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" maxlength="50" placeholder="dave.loper@afpa.fr">
+                        <div id="div_erreur_mail" class="erreur_form"></div>
+                </fieldset>
+    
+                <fieldset>    
+                    <legend>Votre demande</legend>
+                                                               
+                            <div class="form-floating">  
+                                <select id="sujet" class="form-select">
+                                    <option value="null" selected>Veuillez séléctionner un sujet</option>
+                                    <option value="commandes">Mes commandes</option>
+                                    <option value="produit">Question sur un produit</option>
+                                    <option value="reclamation">Réclamation</option>
+                                    <option value="autres">Autres</option>
+                                </select>
+                            <label for="sujet">Sujet</label><br>     
+                            </div>                    
+    
+                        <label for="question" class="form-label">Votre question* : </label>
+                        <textarea class="form-control" name="question" cols="40" id="question"></textarea>
+                        <div id="div_erreur_question" class="erreur_form"></div>    
+                </fieldset>
+
+                <br>                    
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="accepter" value="accepter" id="bouton_confirmation">
+                    <label class="form-check-label" for="bouton_confirmation">J'accepte le traitement informatique de ce formulaire</label>
+                    <div id="div_erreur_confirmation" class="erreur_form"></div>
+                </div>                
+                
+                <div class="d-grid gap-2 d-md-block">
+                    <input type="submit" value="Envoyer" id="bouton_verif" class="btn btn-dark">
+                    <input type="reset" value="Annuler" id="bouton_annuler" class="btn btn-dark">
+                </div>
+
+                <br>
+            </form>    
+        </section>
+
+        <footer>
+            <div class="navbar navbar-expand-lg bg-secondary">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="btn-group">
+                                <a class="btn" type="button" href="#">Mentions légales</a>
+                            </li>
+                            <li class="btn-group">
+                                <a class="btn" type="button" href="#">Horaires</a>
+                            </li>
+                            <li class="btn-group">
+                                <a class="btn" type="button" href="#">Plan du site</a>
+                            </li>   
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+
+<!-- Notes : Tableau aux couleurs alternées, entête gris/noir. Le formulaire ne change presque pas d'apparence. -->
+
+</html>
+
+
+
